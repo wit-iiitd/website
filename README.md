@@ -6,7 +6,7 @@ To run the web application on a local server:
 
 - Clone the repository
 ```
-git clone https://github.com/BhavyaC16/FlairifyMe.git
+git clone https://github.com/wit-iiitd/website.git
 ```
 - Create a virtual environment
 ```
