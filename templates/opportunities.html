@@ -3,6 +3,7 @@
 	<head>
 		<title>Women in Tech | IIITD</title>
 		<meta charset="utf-8" />
+		<meta name="Description" CONTENT="Women in Tech, IIIT-D aims to have a close knit community of women with access to a better network, opportunities and a support system. Visit the website for resources and to learn more about opportunities in tech. Do check out the latest virtual events being organised by WiT! Portal developed by Bhavya Chopra.">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
 		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='css/noscript.css') }}" /></noscript>
@@ -15,7 +16,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="/home" class="logo"><strong>Women in Tech</strong> <span>IIIT-Delhi</span></a>
+						<a href="home" class="logo"><strong>Women in Tech</strong> <span>IIIT-Delhi</span></a>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -38,18 +39,53 @@
 						</ul>
 					</nav>
 
-				<!-- Main -->
 					<div id="main" class="alt">
 
 						<!-- One -->
-							<section id="one">
-								<div class="inner">
-									<h1 align="center">Error 404</h1>
-									<span class="image main"><img src="{{ url_for('static', filename='images/page_not_found.png') }}" alt="" /></span>
-								</div>
-							</section>
 
-					</div>
+									<div class="inner">
+									<header class="major">
+										<h1>Opportunities</h1>
+									</header>
+
+									<!-- Content -->
+									<div class="row">
+									  <div class="column">
+									    <div class="card" id="scholarships">
+									    	<span class="image fit"><img src="{{ url_for('static', filename='images/opportunity/scholarship-card.jpg') }}" alt="" /></span>
+								    			<a href="opportunities/scholarships" class="button card-link fit">Scholarships</a>
+									    </div>
+									  </div>
+									  <div class="column">
+									    <div class="card" id="internships">
+									    	<span class="image fit"><img src="{{ url_for('static', filename='images/opportunity/internship-card.jpg') }}" alt="" /></span>
+								    			<a href="opportunities/internships" class="button card-link fit">Internships</a>
+									    </div>
+									  </div>
+									  <div class="column">
+									    <div class="card" id="open-source">
+									    	<span class="image fit"><img src="{{ url_for('static', filename='images/opportunity/open-source-card.jpg') }}" alt="" /></span>
+								    			<a href="opportunities/opensource" class="button card-link fit">Open Source</a>
+									    </div>
+									  </div>
+									</div>
+									<div class="row">
+									  <div class="col-2"></div>
+									  <div class="column">
+									    <div class="card" id="cp">
+									    	<span class="image fit"><img src="{{ url_for('static', filename='images/opportunity/cp-card.jpg') }}" alt="" /></span>
+								    			<a href="opportunities/competitive-programming" class="button card-link fit">Competitive Programming</a>
+									    </div>
+									  </div>
+									  <div class="column">
+									    <div class="card" id="dev-clubs">
+									    	<span class="image fit"><img src="{{ url_for('static', filename='images/opportunity/dev-clubs-card.jpg') }}" alt="" /></span>
+								    			<a href="opportunities/dev-clubs" class="button card-link fit">Developer Clubs</a>
+									    </div>
+									  </div>
+									</div>
+									
+									<hr class="major" />
 
 				<!-- Footer -->
 					<footer id="footer">
@@ -63,7 +99,7 @@
 								<li><a href="https://www.youtube.com/channel/UC4ftwaYya_dr--0eK6xieRQ" target="_blank" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
 							</ul>
 							<ul class="copyright">
-								<li>&copy; Copyright Women in Tech, IIIT-Delhi</li><li>Made by <a href="https://github.com/BhavyaC16">Bhavya Chopra</a></li>
+								<li>&copy; Copyright Women in Tech, IIIT-Delhi</li><li>Made by <a href="https://github.com/BhavyaC16">Bhavya Chopra</a></li><li>Content by <a href="https://github.com/SonaliSinghal" target="_blank">Sonali Singhal</a> (Website: <a href="http://techhelpher.me/" target="_blank">techhelpher.me</a>)</li>
 							</ul>
 						</div>
 					</footer>

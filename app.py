@@ -29,21 +29,53 @@ def menu_home():
 def team():
 	return render_template('team.html')
 
+@app.route('/gallery')
+def gallery():
+    return render_template('gallery.html')
+
+@app.route('/opportunities')
+def opportunities():
+    return render_template('opportunities.html')
+
+@app.route('/opportunities/scholarships')
+def scholarships():
+    return render_template('scholarships.html')
+
+@app.route('/opportunities/internships')
+def internships():
+    return render_template('internships.html')
+
+@app.route('/opportunities/competitive-programming')
+def cp():
+    return render_template('cp.html')
+
+@app.route('/opportunities/dev-clubs')
+def devclubs():
+    return render_template('devclubs.html')
+
+@app.route('/opportunities/opensource')
+def opensource():
+    return render_template('opensource.html')
+
+@app.route('/resources')
+def resources():
+    return render_template('resources.html')
+
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
 
-@app.route('/landing')
-def landing():
-	return render_template('landing.html')
+# @app.route('/landing')
+# def landing():
+# 	return render_template('landing.html')
 
-@app.route('/generic')
-def generic():
-	return render_template('generic.html')
+# @app.route('/generic')
+# def generic():
+# 	return render_template('generic.html')
 
-@app.route('/elements')
-def elements():
-	return render_template('elements.html')
+# @app.route('/elements')
+# def elements():
+# 	return render_template('elements.html')
 
 @app.errorhandler(404)
 def file_not_found(error):
