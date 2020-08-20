@@ -1773,7 +1773,7 @@ input, select, textarea {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.6); /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
-  background-color: #89d1dd;
+  background-color: #75b0ba;
   border-radius: 5px;
   margin-bottom: 40px;
 }
@@ -1790,6 +1790,20 @@ input, select, textarea {
     display: block;
     margin-bottom: 20px;
   }
+}
+
+.video-wrapper {
+	position: relative; 
+	padding-bottom: 56.25%; 
+	padding-top: 25px;
+}
+
+.video-wrapper iframe {
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%;
 }
 
 /* Section/Article */
@@ -2011,7 +2025,7 @@ input, select, textarea {
 		padding: 0.75em 1em;
 	}
 
-	input[type="checkbox"],
+/*	input[type="checkbox"],
 	input[type="radio"] {
 		-moz-appearance: none;
 		-webkit-appearance: none;
@@ -2035,9 +2049,9 @@ input, select, textarea {
 			padding-left: 2.65em;
 			padding-right: 0.75em;
 			position: relative;
-		}
+		}*/
 
-			input[type="checkbox"] + label:before,
+/*			input[type="checkbox"] + label:before,
 			input[type="radio"] + label:before {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
@@ -2066,23 +2080,23 @@ input, select, textarea {
 				top: 0;
 				width: 2.0625em;
 			}
-
-		input[type="checkbox"]:checked + label:before,
+*/
+/*		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
 			background: #ffffff;
 			border-color: #9bf1ff;
 			content: '\f00c';
 			color: #015462;
-		}
-
+		}*/
+/*
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
 			box-shadow: 0 0 0 2px #9bf1ff;
-		}
-
+		}*/
+/*
 	input[type="radio"] + label:before {
 		border-radius: 100%;
-	}
+	}*/
 
 	::-webkit-input-placeholder {
 		color: rgba(244, 244, 255, 0.2) !important;
@@ -3987,3 +4001,70 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
+/*
+CSS for the tab interaction
+*/
+.tabset > input[type="radio"] {
+  position: absolute;
+  left: -200vw;
+}
+
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+  display: block;
+}
+
+.tabset > label {
+  position: relative;
+  display: inline-block;
+  padding: 15px 15px 15px;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/*.tabset > label::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 22px;
+  height: 2px;
+  background: #fff;
+}*/
+
+/*.tabset > label:hover,
+.tabset > input:focus + label {
+  color: #fff;
+}*/
+
+.tabset > label:hover::after,
+.tabset > input:focus + label::after,
+.tabset > input:checked + label::after {
+  background: #89d1dd;
+}
+
+.tabset > input:checked + label {
+  border-color: #89d1dd;
+  border-bottom: 1px solid #89d1dd;
+  margin-bottom: -1px;
+}
+
+.tab-panel {
+  padding: 30px 0;
+  border-top: 1px solid #ccc;
+}
+
+.tabset {
+  max-width: 65em;
+}

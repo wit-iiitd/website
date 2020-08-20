@@ -25,6 +25,10 @@ def home():
 def menu_home():
     return render_template('index.html')
 
+@app.route('/updates')
+def updates():
+    return render_template('updates.html')
+
 @app.route('/team')
 def team():
 	return render_template('team.html')
@@ -32,6 +36,10 @@ def team():
 @app.route('/gallery')
 def gallery():
     return render_template('gallery.html')
+
+@app.route('/events')
+def events():
+    return render_template('events.html')
 
 @app.route('/opportunities')
 def opportunities():
@@ -60,6 +68,18 @@ def opensource():
 @app.route('/resources')
 def resources():
     return render_template('resources.html')
+
+@app.route('/resources/sde-interview')
+def resourcesSde():
+    return render_template('resources-sde.html')
+
+@app.route('/resources/pm-interview')
+def resourcesPM():
+    return render_template('resources-pm.html')
+
+@app.route('/resources/design')
+def design():
+    return render_template('resources-design.html')
 
 @app.route('/contact')
 def contact():
