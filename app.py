@@ -1,4 +1,4 @@
-import os
+import os, json
 from flask import Flask, request, redirect, render_template, url_for
 port = int(os.environ.get("PORT",5000))
 
@@ -84,6 +84,18 @@ def design():
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
+
+@app.route('/api/slash', methods=['GET'])
+def apiSlash():
+    answer = request.args
+    answer = str(answer)
+    answer = answer[26:-4].lower()
+    print(answer)
+    resp = {'status': 'unsuccessful. Wrong parameter', 'status_code': 200}
+    if(answer=="googol"):
+        print("here")
+        resp = {'status': 'successful', 'status_code': 200, 'flag':'crystal'}
+    return json.dumps(resp)
 
 # @app.route('/landing')
 # def landing():
