@@ -90,12 +90,11 @@ def apiSlash():
     answer = request.args
     answer = str(answer)
     answer = answer[26:-4].lower()
-    print(answer)
-    resp = {'status': 'unsuccessful. Wrong parameter', 'status_code': 200}
     if(answer=="googol"):
         print("here")
         resp = {'status': 'successful', 'status_code': 200, 'flag':'crystal'}
-    return json.dumps(resp)
+        return json.dumps(resp)
+    return forbidden(403)
 
 # @app.route('/landing')
 # def landing():
@@ -112,6 +111,10 @@ def apiSlash():
 @app.errorhandler(404)
 def file_not_found(error):
 	return render_template('file_not_found.html')
+
+@app.errorhandler(403)
+def forbidden(error):
+    return {'status': 'forbidden', 'status_code': 403}
 
 if __name__ == "__main__":
     app.run(debug=True)
