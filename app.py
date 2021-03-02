@@ -65,6 +65,10 @@ def devclubs():
 def opensource():
     return render_template('opensource.html')
 
+@app.route('/opportunities/job-opportunities')
+def job_opportunities():
+    return render_template('job-opportunities.html')
+
 @app.route('/resources')
 def resources():
     return render_template('resources.html')
