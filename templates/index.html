@@ -62,7 +62,7 @@
 							<div class="content">
 								<p>We aim to have a close knit community of women with access to a better network, opportunities and a support system. Through WiT, we want to garner an ecosystem where all the women grow stronger, and help their fellow peers grow with them.</p>
 								<ul class="actions">
-									<li><a href="#one" class="button next scrolly">Get Started</a></li>
+									<li><a href="#slideshowelement" class="button next scrolly">Get Started</a></li>
 								</ul>
 							</div>
 						</div>
@@ -70,6 +70,82 @@
 
 				<!-- Main -->
 					<div id="main">
+
+		<main class="main-content" id="slideshowelement">
+		  <section class="slideshow">
+		    <div class="slideshow-inner">
+		      <div class="slides">
+		        <div class="slide is-active ">
+		          <div class="slide-content">
+		            <div class="caption">
+		              <div class="title">Placement Week</div>
+		              <div class="text" style="font-size: 22px">
+		                <p>Women in Tech, in collaboration with LeanIn IIITD conducted AMA Sessions on Design Jobs and Internships, HCI Research Roles and SDE Roles!</p>
+		              </div> 
+		              
+		            </div>
+		          </div>
+		          <div class="image-container"> 
+		            <img src="static/images/slideshow/1.png" alt="" class="image" />
+		          </div>
+		        </div>
+		        <div class="slide">
+		          <div class="slide-content">
+		            <div class="caption">
+		              <div class="title">Telegram Channel</div>
+		              <div class="text" style="font-size: 22px">
+		                <p>Be a part of the community! The channel is an active source for opportunities and resources in STEM!</p>
+		              </div> 
+		              
+		            </div>
+		          </div>
+		          <div class="image-container">
+		            <img src="static/images/slideshow/2.png" alt="" class="image" />
+		          </div>
+		        </div>
+		        <div class="slide">
+		          <div class="slide-content">
+		            <div class="caption">
+		              <div class="title">Upcoming: Newsletter</div>
+		              <div class="text" style="font-size: 22px">
+		                <p>Women in Tech is soon coming up with monthly newsletters to help you keep in touch with the latest opportunities and events in tech!</p>
+		              </div> 
+		              
+		            </div>
+		          </div>
+		          <div class="image-container">
+		            <img src="static/images/slideshow/3.png" alt="" class="image" />
+		          </div>
+		        </div>
+		      </div>
+		      <div class="pagination">
+		        <div class="item is-active"> 
+		          <span class="icon">1</span>
+		        </div>
+		        <div class="item">
+		          <span class="icon">2</span>
+		        </div>
+		        <div class="item">
+		          <span class="icon">3</span>
+		        </div>
+		      </div>
+		      <div class="arrows">
+		        <div class="arrow prev">
+		          <span class="svg svg-arrow-left">
+		            <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"/> </svg>
+		            <span class="alt sr-only"></span>
+		          </span>
+		        </div>
+		        <div class="arrow next">
+		          <span class="svg svg-arrow-right">
+		            <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"/> </svg>
+		            <span class="alt sr-only"></span>
+		          </span>
+		        </div>
+		      </div>
+		    </div> 
+		  </section>
+		</main>
 
 						<!-- One -->
 							<section id="one" class="tiles">
@@ -169,8 +245,9 @@
 			<script src="{{ url_for('static', filename='js/jquery.scrollex.min.js') }}"></script>
 			<script src="{{ url_for('static', filename='js/browser.min.js') }}"></script>
 			<script src="{{ url_for('static', filename='js/breakpoints.min.js') }}"></script>
+			<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script><script  src="./script.js"></script>
+			<script src="{{ url_for('static', filename='js/slideshow.js') }}"></script>
 			<script src="{{ url_for('static', filename='js/util.js') }}"></script>
 			<script src="{{ url_for('static', filename='js/main.js') }}"></script>
-
 	</body>
 </html>
