@@ -33,9 +33,13 @@ def updates():
 def team():
 	return render_template('team.html')
 
-@app.route('/gallery')
-def gallery():
-    return render_template('gallery.html')
+@app.route('/blog')
+def blog():
+    return render_template('blogs.html')
+
+@app.route('/newsletter')
+def newsletter():
+    return render_template('newsletters.html')
 
 @app.route('/events')
 def events():
