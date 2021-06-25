@@ -93,10 +93,6 @@ def design():
 def contact():
     return render_template('contact.html')
 
-@app.route('/NaNEaters')
-def NaNEaters():
-    return render_template('hack.html')
-
 @app.route('/api/slash', methods=['GET'])
 def apiSlash():
     answer = request.args
