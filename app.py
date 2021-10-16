@@ -33,6 +33,10 @@ def updates():
 def team():
 	return render_template('team.html')
 
+@app.route('/credits')
+def credits():
+	return render_template('credits.html')
+
 @app.route('/blog')
 def blog():
     return render_template('blogs.html')
