@@ -37,6 +37,10 @@ def team():
 def credits():
 	return render_template('credits.html')
 
+@app.route('/calendar')
+def calendar():
+    return render_template('calendar.html')
+
 @app.route('/blog')
 def blog():
     return render_template('blogs.html')
