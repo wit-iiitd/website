@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176781189-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-176781189-1');
+		</script>
+		
+		<title>Women in Tech | IIITD</title>
+		<meta charset="utf-8" />
+		<meta name="Description" CONTENT="Women in Tech, IIIT-D aims to have a close knit community of women with access to a better network, opportunities and a support system. Visit the website for resources and to learn more about opportunities in tech. Do check out the latest virtual events being organised by WiT! Portal developed by Bhavya Chopra.">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='css/noscript.css') }}" /></noscript>
+		<link rel="icon" href="{{ url_for( 'static' , filename='images/favicon.png') }}" type="image/gif" sizes="32x32">
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="home" class="logo"><strong>Women in Tech</strong> <span>IIIT-Delhi</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<span class="image">
+							<img src="{{ url_for('static', filename='images/center.jpg') }}" width="100px"alt="" />
+						</span>
+						<ul class="links">
+							<li><a href="home">Home</a></li>
+							<li><a href="opportunities">Opportunities</a></li>
+							<li><a href="resources">Resources</a></li>
+							<li><a href="events">Virtual Events</a></li>
+							<li><a href="blog">Blogs</a></li>
+							<li><a href="newsletter">Newsletters</a></li>
+							<li><a href="team">Women in Tech Team</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="contact" class="button fit">Contact Us</a></li>
+						</ul>
+					</nav>
+
+					<div id="main" class="alt">
+
+						<!-- One -->
+						<div class="inner">
+							<header class="major">
+								<h2>Women in Tech Calendar</h2>
+							</header>
+
+							<section id="one">
+								<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FKolkata&showCalendars=1&title=Women%20in%20Tech%2C%20IIIT-Delhi&src=d29tZW5pbnRlY2hAc2MuaWlpdGQuYWMuaW4&color=%23039BE5" style="border:solid 1px #777" width="1200" height="400" frameborder="0" scrolling="no" align="center"></iframe>
+							</section>
+						</div>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://www.facebook.com/wit.iiitd/" target="_blank" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.instagram.com/womenintechiiitd/" target="_blank" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://github.com/wit-iiitd" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/company/witiiitd/" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://t.me/joinchat/Go0cChCXer2L_21UYwFOVg" class="icon brands alt fa-telegram"><span class="label">Telegram</span></a></li>
+								<li><a href="https://www.youtube.com/channel/UC4ftwaYya_dr--0eK6xieRQ" target="_blank" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Copyright Women in Tech, IIIT-Delhi</li><li><a href="/credits">Credits</a></li><li>Design adapted from <a href="https://html5up.net/">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/jquery.scrolly.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/jquery.scrollex.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/browser.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/breakpoints.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/util.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+	</body>
+</html>
